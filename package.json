@@ -1,0 +1,28 @@
+{
+  "name": "mestre",
+  "version": "1.0.0",
+  "description": "template de criacao de jogos com phaser 3",
+  "main": "index.js",
+  "author": "Italo Souza <italoasouza@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack/webpack.dev.js",
+    "build": "webpack --config webpack/webpack.prod.js"
+  },
+  "dependencies": {
+    "phaser": "^3.18.1"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.3",
+    "html-webpack-plugin": "^3.2.0",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1",
+    "webpack-obfuscator": "^0.18.3",
+    "workbox-webpack-plugin": "^4.3.1"
+  }
+}
