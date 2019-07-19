@@ -3,6 +3,7 @@ import Phaser from 'phaser'
 import { DEFAULT_HEIGHT, DEFAULT_WIDTH } from './config/const'
 import AssetsPreloader from './scenes/AssetsPreloader'
 import MenuScene from './scenes/MenuScene'
+import PlayScene from './scenes/PlayScene'
 
 window.addEventListener('load', () => {
   const config: Phaser.Types.Core.GameConfig = {
@@ -22,7 +23,7 @@ window.addEventListener('load', () => {
       path: 'assets/'
     },
     plugins: {},
-    scene: [AssetsPreloader, MenuScene],
+    scene: [AssetsPreloader, MenuScene, PlayScene],
     title: 'Memory Puzzle',
     url: 'http://localhost:3000'
   }

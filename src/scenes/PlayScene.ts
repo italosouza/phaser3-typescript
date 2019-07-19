@@ -1,7 +1,7 @@
 import { LevelText } from '../components/LevelText'
 import { config } from '../config/config'
 
-export class PlayScene extends Phaser.Scene {
+export default class PlayScene extends Phaser.Scene {
   private ui: LevelText
   private points: number = 0
   private level: number = 0
@@ -24,7 +24,9 @@ export class PlayScene extends Phaser.Scene {
     //     fill: '#ffffff'
     //   }
     // })
+
     this.ui = new LevelText(this, this.level)
+    console.log(this.ui.score)
   }
 
   public create() {
@@ -32,6 +34,6 @@ export class PlayScene extends Phaser.Scene {
   }
 
   public update() {
-    this.ui.score.setText(['Pontos: '])
+    // this.ui.score.setText(['Pontos: '])
   }
 }
