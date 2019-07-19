@@ -1,6 +1,6 @@
 export const config = {
   scenes: {
-    load: 'load',
+    assetsPreloader: 'assetsPreloader',
     menu: 'menu',
     play: 'play'
   },
@@ -13,11 +13,13 @@ export const config = {
     levelCompleted: 'level_completed.wav'
   },
   sprites: {
-    fire1: { key: 'fire1', url: 'fire1_64.png', frameConfig: { frameWidth: 64, frameHeight: 64 } }
+    // fire1: { key: 'fire1', url: 'fire1_64.png', frameConfig: { frameWidth: 64, frameHeight: 64 } }
   },
-  atlas: [{ key: 'items', atlasURL: 'items.json' }],
+  atlas: [
+    // { key: 'items', atlasURL: 'items.json' }
+  ],
   images: {
-    logo: 'logo.png',
+    // logo: 'logo.png',
     bg: 'bg_03.jpg',
     playButton: 'play.png'
   }
